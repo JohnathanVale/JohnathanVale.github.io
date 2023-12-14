@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    
+	<head>
+        <style>
+            .button{
+               
+                color: red;
+                
+                font-weight: normal;
+            }
+            .radio{
+                
+                font-weight: normal; 
+            }
+            
+            .input{
+                
+                text-align: initial;
+                font-size: 10pt;
+                color: black;
+                
+                
+            }
+            .textAreaTest{
+                display: inline;
+                text-align: start;
+            }
+            
+        </style>
+		<title>Fancify Shamcify</title>
+
+		<!-- link to your script file here -->
+        <script src="fancifymytext.js"></script>
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>   
+		<!-- Your UI controls go here -->
+        <fieldset>
+            <legend>Text</legend>
+           <textarea rows="4" cols="30" id="textChange" class="textAreaTest" name="textAreaTest"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Fancify</legend>
+        <button type = "button" class="button" onclick="fancifymytext()"> Bigger!</button>
+		
+        <input type="radio" name="tryme" class="radio" id="btTest" onchange="FancyShmancy()"> FancyShmancy</input>
+        <input type="radio" name="tryme" class="radio" id="btNum" onchange="BoringBetty()"> BoringBetty</input>
+        <button type = "button" class="button" onclick="Moo()"> Moo</button>
+        </fieldset>
+		
+        
+       
+	</body>
+</html>
